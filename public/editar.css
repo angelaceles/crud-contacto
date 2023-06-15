@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #fdfdfd;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+}
+
+.edit-contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .edit-contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .edit-contact-form input[type="text"],
+  .edit-contact-form input[type="email"],
+  .edit-contact-form input[type="date"] {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .edit-contact-form input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  .edit-contact-form img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .edit-contact-form button {
+    padding: 10px 15px;
+  }
+
+  .btn-neon{
+    align-items: center;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  .btn-neon:hover{
+    background: #4de7b4;
+    box-shadow: 0 0 10px #4de7b4, 0 0 40px #4de7b4, 0 0 80px #4de7b4;
+    transition-delay: 1s;
+  }
+  .btn-neon span{
+    position: absolute;
+    display: block;
+  }
+  #span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#4de7b4);
+  }
+  .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+  }
+  #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#4de7b4);
+  }
+  .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+  #span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#4de7b4);
+  }
+  .btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  #span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#4de7b4);
+  }
+  .btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+  }

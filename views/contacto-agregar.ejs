@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Agregar Contacto</title>
+    <link rel="stylesheet" href="/agregar.css">
+</head>
+<body>
+    <h1>Agregar Contacto</h1>
+    <form class="add-contact-form" action="/api/v1/add" method="POST" enctype="multipart/form-data">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name">
+            
+        <label for="lastname">Apellido:</label>
+        <input type="text" id="lastname" name="lastname">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="fecha_nac">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nac" name="fecha_nac">
+
+        <label for="image">Imagen:</label>
+        <input type="file" id="image" name="image">
+        <br>
+        <button type="submit">Agregar contacto</button>
+        <br>
+    <a href="/"class="btn-neon">
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+        Regresar a la página de inicio
+    </a>
+    </form>
+</body>
+</html>

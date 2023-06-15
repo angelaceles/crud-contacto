@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Detalles del Contacto</title>
+    <link rel="stylesheet" href="/detalles.css">
+</head>
+<body>
+    <h1>Detalles del Contacto</h1>
+
+    <div class="contact-details">
+        <h2><%= contact.name %></h2>
+        <img class="contact-image" src="<%= contact.image %>" alt="Imagen de contacto">
+        <p><strong>Apellido:</strong> <%= contact.lastname %></p>
+        <p><strong>Email:</strong> <%= contact.email %></p>
+        <p><strong>Fecha de Nacimiento:</strong> <%= contact.fecha_nac.toISOString().split('T')[0] %></p>
+    </div>
+    <br>   
+    <a href="/editar/<%= contact._id %>" class="btn-neon">
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+        Editar contacto
+    </a>
+    <a href="/contacto/eliminar/<%= contact._id %>" class="btn-neon">
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+        Eliminar contacto
+    </a>
+    <br>
+    <br>
+    <a href="/"class="btn-neon">
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+        Regresar
+    </a>
+</body>
+</html>

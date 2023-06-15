@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lista de Contactos</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Contactos</h1>
+    </div>
+    <div>
+      <% if (contacts.length > 0) { %>
+        <ul>
+          <% contacts.forEach(function(contact) { %>
+            <li class="contact">
+              <div>
+                <img class="contact-image" src="<%= contact.image %>" alt="Imagen de contacto">
+              </div>
+              <div class="contact-details">
+                <span class="contact-name"><%= contact.name %></span>
+                <span class="contact-email"><%= contact.email %></span>
+                <br>
+                <a class="btn-neon" href="/contactos/<%= contact._id %>">
+                  <span id="span1"></span>
+                  <span id="span2"></span>
+                  <span id="span3"></span>
+                  <span id="span4"></span>
+                  Detalles
+                </a>
+
+              </div>
+            </li>
+            <% }); %>
+          </ul>
+          <% } else { %>
+            <p>No hay contactos disponibles.</p>
+        <% } %>
+    </div>  
+    <div>
+      <a href="/agregar" class="btn-neon">
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+        Agregar contacto
+      </a>
+    </div>
+</body>
+</html>
